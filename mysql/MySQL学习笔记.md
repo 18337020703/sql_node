@@ -48,6 +48,9 @@ INSERT INTO pet VALUES ('puffball', 'Diane', 'hamster', 'f', '1990-03-30', NULL)
 -- 修改数据
 UPDATE pet SET name = 'squirrel' where owner = 'Diane';
 
+-- 修改数据类型
+ALTER TABLE pet CHANGE name name VARCHAR(30);
+
 -- 删除数据
 DELETE FROM pet where name = 'squirrel';
 
